@@ -26,20 +26,6 @@
 </div>
 
 <div class="row form-group">
-  <div class="col col-md-3">
-    <label for="text-input" class=" form-control-label">Nama Kota</label></div>
-        <div class="col-12 col-md-9">
-          <select class="form-control pl-0 form-control-line" name="idkota">
-            <option disabled selected style="padding: 10px">Pilih Nama Kota</option>
-              @foreach($kota as $key => $value)
-            <option value="{{ $key }}">{{ $value }}
-            </option>
-              @endforeach
-          </select>  
-        </div>
-</div>
-
-<div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nama Pegawai</label></div>
 <div class="col-12 col-md-9"><input required="" type="text" required="" id="namapegawai" name="namapegawai" placeholder="Masukkan nama Pegawai" class="form-control"></div>
 </div>
@@ -62,6 +48,20 @@
 </div>
 
 <div class="row form-group">
+  <div class="col col-md-3">
+    <label for="text-input" class=" form-control-label">Nama Kota</label></div>
+        <div class="col-12 col-md-9">
+          <select class="form-control pl-0 form-control-line" name="idkota">
+            <option disabled selected style="padding: 10px">Pilih Nama Kota</option>
+              @foreach($kota as $key => $value)
+            <option value="{{ $key }}">{{ $value }}
+            </option>
+              @endforeach
+          </select>  
+        </div>
+</div>
+
+<div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Alamat</label></div>
 <div class="col-12 col-md-9"><input required="" type="text" id="alamat" name="alamat" placeholder=" Masukkan alamat" class="form-control"></div>
 </div>
@@ -77,7 +77,7 @@
 </div>
 
 
-<div class="row form-group">
+<!-- <div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status Pegawai</label></div>
 <div class="col-12 col-md-9">
 <select name="statuspegawai" id="statuspegawai" class="form-control">
@@ -87,7 +87,7 @@
 </select>
 </div>
 </div>
-
+ -->
 <center>
 <a href="PegawaiIndex"><button type="submit" class="btn btn-info">Simpan</button></a>
 <a href="PegawaiIndex" id="btn-cancel"><button type="submit" class="btn btn-danger">Batal</button></a>

@@ -77,7 +77,7 @@
                            
                         </div>
                         <div class="register-link m-t-15 text-center">
-                            <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
+                            <p>Don't have account ? <a href="Register"> Sign Up Here</a></p>
                         </div>
                     </form>
                 </div>

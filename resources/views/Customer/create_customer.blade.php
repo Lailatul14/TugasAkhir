@@ -2,26 +2,14 @@
 @section('konten')
 <div class="col-lg-12">
 <div class="card">
-<div class="card-header"><strong>Edit Data User</strong></div>
+<div class="card-header"><strong>Edit Data Customer</strong></div>
 <div class="card-body card-block">
 
 <form action="CustomerStore" method="POST" class="form-horizontal">
   {{ @csrf_field() }}
 
 
-<div class="row form-group">
-  <div class="col col-md-3">
-    <label for="text-input" class=" form-control-label">Nama Kota</label></div>
-        <div class="col-12 col-md-9">
-          <select class="form-control pl-0 form-control-line" name="idkota">
-            <option disabled selected style="padding: 10px">Pilih Nama Kota</option>
-              @foreach($kota as $key => $value)
-            <option value="{{ $key }}">{{ $value }}
-            </option>
-              @endforeach
-          </select>  
-        </div>
-</div>
+
 <div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nama Customer</label></div>
 <div class="col-12 col-md-9"><input required="" type="text" id="namacustomer" name="namacustomer" placeholder="Masukkan nama customer" class="form-control"></div>
@@ -42,6 +30,20 @@
 <div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nomor Telpon</label></div>
 <div class="col-12 col-md-9"><input required="" type="text" id="telpcustomer" name="telpcustomer" placeholder="Masukkan nomor telpon" class="form-control"></div>
+</div>
+
+<div class="row form-group">
+  <div class="col col-md-3">
+    <label for="text-input" class=" form-control-label">Nama Kota</label></div>
+        <div class="col-12 col-md-9">
+          <select class="form-control pl-0 form-control-line" name="idkota">
+            <option disabled selected style="padding: 10px">Pilih Nama Kota</option>
+              @foreach($kota as $key => $value)
+            <option value="{{ $key }}">{{ $value }}
+            </option>
+              @endforeach
+          </select>  
+        </div>
 </div>
 
 <div class="row form-group">

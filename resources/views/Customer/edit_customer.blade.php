@@ -2,7 +2,7 @@
 @section('konten')
 <div class="col-lg-12">
 <div class="card">
-<div class="card-header"><strong>Edit Data User</strong></div>
+<div class="card-header"><strong>Edit Data Customer</strong></div>
 <div class="card-body card-block">
   @foreach($customer as $c)
 <form action="CustomerUpdate" method="POST" class="form-horizontal">
@@ -13,20 +13,7 @@
 <div class="col-12 col-md-9"><input type="text" readonly="" id="idcustomer" name="idcustomer" class="form-control" value=" {{ $c->ID_CUSTOMER }}"></div>
 </div>
 
-<div class="row form-group">
-<div class="col col-md-3"><label for="text-input" class=" form-control-label">ID Kota</label></div>
-                                        <div class="col-12 col-md-9">
-                                        <select class="form-control pl-0 form-control-line" id="idkota" name="idkota">
-                                            
-                                          @foreach($kota as $k) 
-                                          <option value=" {{ $k->ID_KOTA}}" selected>
-                                            {{ $k->NAMA_KOTA}}
-                                          </option>
-                                          @endforeach
-                                            </select>  
-                                        </div>
-                                      </div>
-
+                          
 <div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nama Customer</label></div>
 <div class="col-12 col-md-9"><input type="text" id="namacustomer" name="namacustomer"  class="form-control" value=" {{ $c->NAMA_CUSTOMER }}"></div>
@@ -53,6 +40,19 @@
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nomor Telpon</label></div>
 <div class="col-12 col-md-9"><input required="" type="text" id="telpcustomer" name="telpcustomer" placeholder="Masukkan nomor telpon" class="form-control" value=" {{ $c->TELP_CUSTOMER }}"></div>
 </div>
+
+                          <div class="row form-group">
+                            <div class="col col-md-3"><label for="text-input" class=" form-control-label">ID Kota</label></div>
+                              <div class="col-12 col-md-9">
+                                <select class="form-control pl-0 form-control-line" id="idkota" name="idkota">
+                                  @foreach($kota as $k) 
+                                    <option value=" {{ $k->ID_KOTA}}" selected>
+                                      {{ $k->NAMA_KOTA}}
+                                    </option>
+                                  @endforeach
+                                 </select>  
+                               </div>
+                            </div>
 
 <div class="row form-group">
 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Alamat</label></div>

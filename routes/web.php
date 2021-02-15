@@ -94,6 +94,8 @@ Route::get('DaftarSewaIndex', 'Transaksi\DaftarPenyewaanController@index') ;
 Route::post('DaftarSewaUpdate', 'Transaksi\DaftarPenyewaanController@update') ;
 Route::get('DaftarSewaEdit{id}', 'Transaksi\DaftarPenyewaanController@edit') ;
 
+Route::get('Register', 'Login\RegisterController@index') ;
+Route::post('RegisterStore', 'Login\RegisterController@store') ;
 // Route::get('invoice_penyewaan', function () {
 //     return view('Penyewaan/invoice_penyewaan');
 // });

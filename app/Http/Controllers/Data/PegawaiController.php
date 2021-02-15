@@ -86,8 +86,8 @@ class PegawaiController extends Controller
             'TELP_PEGAWAI' => $request->telppegawai,
             'ALAMAT' => $request->alamat,
             'USERNAME' => $request->username,
-            'PASSWORD' => $request->password,
-            'STATUS_PEGAWAI' => $request->statuspegawai
+            'PASSWORD' => $request->password
+            
 
         ]);
    

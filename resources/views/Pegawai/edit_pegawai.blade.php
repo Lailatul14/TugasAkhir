@@ -3,7 +3,7 @@
 <div class="col-lg-12">
 <div class="card">
 <div class="card-header">
- <strong class="card-title">Tambah Pegawai</strong>
+ <strong class="card-title">Edit Pegawai</strong>
 </div>
 <div class="card-body card-block">
 @foreach($pegawai as $p)
